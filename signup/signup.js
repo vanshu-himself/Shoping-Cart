@@ -65,8 +65,8 @@ signupBtn.addEventListener("click", (e) => {
   else if (password.value != password2.value) {
     alert("password and confirm password are not same!!");
   } else {
-    var existingData = localStorage.getItem("userData")|| [];
-    var parsedData = JSON.parse(existingData);
+//     var existingData = localStorage.getItem("userData")|| [];
+    var parsedData = JSON.parse(localStorage.getItem("userData")) || [];
     var newData = {
       // Add your user data properties here
       firstName: firstName.value,

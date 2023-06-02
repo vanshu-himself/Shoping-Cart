@@ -59,13 +59,13 @@ signupBtn.addEventListener("click", (e) => {
 
 
 
-  // else if (password.value.length < 8) {
-  //   alert("password should contain at least 8 character");
-  // } 
+  else if (password.value.length < 8) {
+    alert("password should contain at least 8 character");
+  } 
   else if (password.value != password2.value) {
     alert("password and confirm password are not same!!");
   } else {
-    var existingData = localStorage.getItem("userData");
+    var existingData = localStorage.getItem("userData")|| [];
     var parsedData = JSON.parse(existingData);
     var newData = {
       // Add your user data properties here

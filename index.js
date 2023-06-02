@@ -13,7 +13,7 @@ const indexProfileLink=document.getElementById('profile-link');
 loginBtn.addEventListener('click',(e)=>{
     
    const link=document.createElement('a');
-   link.href='../login/index.html';
+   link.href='./login/index.html';
    document.body.appendChild(link);
    link.click();
    link.remove();
@@ -21,7 +21,7 @@ loginBtn.addEventListener('click',(e)=>{
 signupBtn.addEventListener('click',()=>{
    
     const link=document.createElement('a');
-    link.href='../signup/index.html';
+    link.href='./signup/index.html';
     document.body.appendChild(link);
     link.click();
     link.remove();

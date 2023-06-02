@@ -16,8 +16,8 @@ loginBtn.addEventListener('click', (e) => {
         
 
     } 
-    // else if (password.value.length < 8) 
-    //     alert("Password must contain at least 8 characters!!");
+    else if (password.value.length < 8) 
+        alert("Password must contain at least 8 characters!!");
 // else if(localStorage.getItem.length===0){
 //     alert('You are not registered user,please do signup first!!');
 //     return;
